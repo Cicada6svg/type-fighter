@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.background {
+  background: url('assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 3em;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.fighter {
+  width: 40%;
+  position: relative;
+}
+
+.avatar {
+  width: 120px;
+  transition: transform 0.2s ease;
+}
+
+.health-bar {
+  height: 20px;
+  background: limegreen;
+  border: 2px solid #fff;
+  margin-top: 10px;
+  transition: width 0.3s ease;
+}
+
+.word-box {
+  margin-bottom: 20px;
+}
+
+#word {
+  font-size: 24px;
+  color: yellow;
+}
+
+#input {
+  padding: 10px;
+  font-size: 18px;
+  width: 200px;
+}
+
+#result {
+  font-size: 28px;
+  margin-top: 20px;
+  font-weight: bold;
+}
