@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Type Fighter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <h1>⚔️ Type Fighter</h1>
+  <div class="game">
+    <div class="fighter player">
+      <img src="https://i.imgur.com/1XjzX9T.png" alt="Player" class="avatar" />
+      <div class="health-bar" id="player-health"></div>
+    </div>
+    <div class="fighter cpu">
+      <img src="https://i.imgur.com/3VesKfN.png" alt="CPU" class="avatar" />
+      <div class="health-bar" id="cpu-health"></div>
+    </div>
+  </div>
+
+  <div class="word-box">
+    <p>Type this to attack:</p>
+    <h2 id="word"></h2>
+    <input type="text" id="input" placeholder="Type here..." autofocus />
+  </div>
+
+  <div id="result"></div>
+
+  <audio id="punch" src="assets/punch.mp3"></audio>
+  <audio id="win" src="assets/win.mp3"></audio>
+  <audio id="lose" src="assets/lose.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
